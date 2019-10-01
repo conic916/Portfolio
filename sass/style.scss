@@ -1,2 +1,208 @@
-.color { color: red;
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400i&display=swap');
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFFFFF;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+/* nav */
+.sidebar {
+    height: 80px;
+    width: 100%;
+    display: inline-block;
+
+    .sidebar__logo {
+        margin-top: -25px;
+        height: 50px;
+        width: 250px;
+        font-size: 28px;
+        color: #000000;
+        font-family: 'Playfair Display', serif;
+        letter-spacing: 2px;
+
+        &::first-letter {
+            font-size: 38px;
+            color: #16CCCC;
+            text-decoration: underline;
+            font-weight: 700;
+        }
+    }
+}
+
+
+
+/* hamburger active */
+
+.hamburger {
+    margin-top: -30px;
+    float: right;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:focus {
+        &>.hamburger__container {
+            box-shadow: 0 0 2px 2px #b6d4eb;
+        }
+    }
+}
+
+.hamburger__container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 35px;
+    height: 30px;
+}
+
+.hamburger__bars {
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #16CCCC;
+    transition: transform 220ms ease-in-out;
+
+    &:before,
+    &:after {
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        background-color: #16CCCC;
+        content: '';
+    }
+
+    &:before {
+        top: -12px;
+        transition: top 100ms 250ms ease-in, transform 220ms ease-in-out;
+    }
+
+    &:after {
+        bottom: -12px;
+        transition: bottom 100ms 250ms ease-in,
+            transform 220ms ease-in-out;
+    }
+}
+
+.hamburger--active {
+    .hamburger__bars {
+        transform: rotate(225deg);
+        transition: transform 220ms 120ms ease-in-out;
+
+        &:before {
+            top: 0;
+            transition: top 100ms ease-out;
+        }
+
+        &:after {
+            bottom: 0;
+            transform: rotate(-90deg);
+            transition: bottom 100ms ease-out,
+                transform 220ms 120ms ease-in-out;
+        }
+    }
+}
+
+.hamburger,
+.hamburger__container {
+    &:focus {
+        outline: none;
+    }
+}
+
+/* header */
+
+.content_section_header {
+    padding-top: 25px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 900;
+    box-shadow: 1px 1px 1px 1px grey;
+    height: 180px;
+    width: 80%;
+
+    .content__header {
+        animation-name: animation-header;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+
+        .content__decoration-letter {
+            border-bottom: 10px solid #16CCCC;
+        }
+    }
+
+
+    /* animation */
+
+    @keyframes animation-header {
+        from {
+            margin-top: 40%;
+            width: 100%;
+            animation-timing-function: ease-out;
+        }
+
+        to {
+            text-align: center;
+            width: 100%;
+            color: rgb(0, 0, 0);
+            animation-timing-function: ease-out;
+        }
+    }
+}
+
+/* line */
+.image__container {
+    box-shadow: 1px 1px 1px 1px red;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    animation-name: animation-container;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+
+    @keyframes animation-container {
+        from {
+            margin-top: -10%;
+            color: #ffffff;
+            animation-timing-function: ease-out;
+        }
+
+        to {
+            color: none;
+            text-align: center;
+            visibility: hidden;
+            display: none;
+            animation-timing-function: ease-out;
+        }
+    }
+
+    .image__line {
+        border-left: 2px solid rgb(0, 0, 0);
+        height: 180px;
+        width: 0;
+        margin: auto;
+        transform: translate(-50%, 25%);
+        justify-content: center;
+        animation-name: animation-container;
+    }
+
+    .image__box {
+        border: 1px solid red;
+        justify-content: center;
+        padding-top: 5%;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
 }
