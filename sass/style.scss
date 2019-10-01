@@ -27,8 +27,9 @@ body {
         font-family: 'Playfair Display', serif;
         letter-spacing: 2px;
         cursor: pointer;
+
         &:hover {
-            transform: scale(0.8); 
+            transform: scale(0.8);
             transition-duration: 3s;
             color: rgb(112, 214, 218);
         }
@@ -220,5 +221,41 @@ body {
         font-size: 18px;
         font-weight: bold;
         letter-spacing: 1px;
+    }
+}
+
+/* gallery */
+
+.gallery {
+    // box-shadow: 1px 1px 1px 1px grey;
+    width: 80%;
+    height: 250px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+
+    .gallery__box {
+        border: 1px solid red;
+        
+
+        .gallery__desc-heading {
+            color: #999999;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .gallery__desc {
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            color: black;
+        }
+        img { 
+            max-width: 500px;
+            height: 200px;
+            
+        }
     }
 }
