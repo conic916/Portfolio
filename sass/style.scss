@@ -26,6 +26,12 @@ body {
         color: #000000;
         font-family: 'Playfair Display', serif;
         letter-spacing: 2px;
+        cursor: pointer;
+        &:hover {
+            transform: scale(0.8); 
+            transition-duration: 3s;
+            color: rgb(112, 214, 218);
+        }
 
         &::first-letter {
             font-size: 38px;
@@ -35,8 +41,6 @@ body {
         }
     }
 }
-
-
 
 /* hamburger active */
 
@@ -125,8 +129,8 @@ body {
     margin: 0 auto;
     text-align: center;
     font-size: 1.8rem;
-    font-weight: 900;
-    box-shadow: 1px 1px 1px 1px grey;
+    font-weight: 800;
+    // box-shadow: 1px 1px 1px 1px grey;
     height: 180px;
     width: 80%;
 
@@ -136,32 +140,44 @@ body {
         animation-timing-function: ease-in-out;
 
         .content__decoration-letter {
-            border-bottom: 10px solid #16CCCC;
+            animation-name: letter;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+
+            @keyframes letter {
+                from {
+                    color: #16CCCC;
+
+                    to {
+
+                        color: rgb(0, 0, 0);
+                    }
+                }
+            }
         }
-    }
 
+        /* animation */
 
-    /* animation */
+        @keyframes animation-header {
+            from {
+                margin-top: 40%;
+                width: 100%;
+                animation-timing-function: ease-out;
+            }
 
-    @keyframes animation-header {
-        from {
-            margin-top: 40%;
-            width: 100%;
-            animation-timing-function: ease-out;
-        }
-
-        to {
-            text-align: center;
-            width: 100%;
-            color: rgb(0, 0, 0);
-            animation-timing-function: ease-out;
+            to {
+                text-align: center;
+                width: 100%;
+                color: rgb(0, 0, 0);
+                animation-timing-function: ease-out;
+            }
         }
     }
 }
 
 /* line */
 .image__container {
-    box-shadow: 1px 1px 1px 1px red;
+    // box-shadow: 1px 1px 1px 1px red;
     width: 80%;
     margin: 0 auto;
     display: block;
@@ -197,11 +213,11 @@ body {
     }
 
     .image__box {
-        border: 1px solid red;
+        // border: 1px solid red;
         justify-content: center;
         padding-top: 5%;
         text-transform: uppercase;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: bold;
         letter-spacing: 1px;
     }

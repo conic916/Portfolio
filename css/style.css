@@ -24,6 +24,13 @@ body {
   color: #000000;
   font-family: 'Playfair Display', serif;
   letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.sidebar .sidebar__logo:hover {
+  transform: scale(0.8);
+  transition-duration: 3s;
+  color: #70d6da;
 }
 
 .sidebar .sidebar__logo::first-letter {
@@ -111,21 +118,31 @@ body {
   margin: 0 auto;
   text-align: center;
   font-size: 1.8rem;
-  font-weight: 900;
-  box-shadow: 1px 1px 1px 1px grey;
+  font-weight: 800;
   height: 180px;
   width: 80%;
-  /* animation */
 }
 
 .content_section_header .content__header {
   animation-name: animation-header;
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
+  /* animation */
 }
 
 .content_section_header .content__header .content__decoration-letter {
-  border-bottom: 10px solid #16CCCC;
+  animation-name: letter;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes letter {
+  from {
+    color: #16CCCC;
+    to {
+      color: black;
+    }
+  }
 }
 
 @keyframes animation-header {
@@ -144,7 +161,6 @@ body {
 
 /* line */
 .image__container {
-  box-shadow: 1px 1px 1px 1px red;
   width: 80%;
   margin: 0 auto;
   display: block;
@@ -181,12 +197,11 @@ body {
 }
 
 .image__container .image__box {
-  border: 1px solid red;
   -ms-flex-pack: center;
       justify-content: center;
   padding-top: 5%;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   letter-spacing: 1px;
 }
