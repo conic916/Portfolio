@@ -12,7 +12,7 @@
 <body>
     <nav class="sidebar">
         <div class="sidebar__logo">
-            <p>KDasilva</p>
+            <p class=sidebar__name>KDasilva</p>
         </div>
         <button class="hamburger">
             <span class="hamburger__container">
@@ -22,12 +22,12 @@
     </nav>
     <section class="content">
         <div class="content_section_header">
+            <a id="content__top"></a>
             <h1 class="content__header">Creating <span class="content__decoration-letter"> my experience </span>step by
                 step </h1>
             <h2 class="content__second-header"> is just the beginning.</h2>
         </div>
     </section>
-
     <section class="image">
         <div class="image__container">
             <div class="image__line"></div>
@@ -41,42 +41,80 @@
             <a class="gallery__latest" href="https://conic916.github.io/first-project/" target="_blank">
                 <img class="gallery__img" src="https://via.placeholder.com/400x400C/O" alt="project"></a>
             <a class="gallery__first" href="https://github.com/conic916/first-project" target="_blank">
-                <p class="gallery__desc-heading">Layout</p>
+                <p class="gallery__desc">Layout</p>
                 <p class="gallery__desc">My first project based on information from a "client".</p>
             </a>
-
             <a class="gallery__new" href="https://conic916.github.io/first-project/" target="_blank">
                 <img class="gallery__seconds" src="https://via.placeholder.com/400x400C/O" alt="project"></a>
             <a class="gallery__second" href="https://github.com/conic916/first-project" target="_blank">
-                <p class="gallery__beginning">Layout</p>
-                <p class="gallery__description">My first project based on information from a "client".</p>
+                <p class="gallery__desc">Layout</p>
+                <p class="gallery__desc">My first project based on information from a "client".</p>
             </a>
             <a class="gallery__indirect" href="https://conic916.github.io/first-project/" target="_blank">
                 <img class="gallery__medium-medium" src="https://via.placeholder.com/400x400C/O" alt="project"></a>
             <a class="gallery__third" href="https://github.com/conic916/first-project" target="_blank">
-                <p class="gallery__medium">Layout</p>
-                <p class="gallery__desc-medium">My first project based on information from a "client".</p>
+                <p class="gallery__desc">Layout</p>
+                <p class="gallery__desc">My first project based on information from a "client".</p>
             </a>
 
             <a class="gallery__older" href="https://conic916.github.io/first-project/" target="_blank">
                 <img class="gallery__jp" src="https://via.placeholder.com/400x400C/O" alt="project"></a>
             <a class="gallery__" href="https://github.com/conic916/first-project" target="_blank">
-                <p class="gallery__fourth">Layout</p>
-                <p class="gallery__desc-fourth">My first project based on information from a "client".</p>
+                <p class="gallery__desc">Layout</p>
+                <p class="gallery__desc">My first project based on information from a "client".</p>
             </a>
             <a class="gallery__eldest" href="https://conic916.github.io/first-project/" target="_blank">
                 <img class="gallery__ig" src="https://via.placeholder.com/400x400C/O" alt="project"></a>
             <a class="gallery__site" href="https://github.com/conic916/first-project" target="_blank">
-                <p class="gallery__fifth">Layout</p>
-                <p class="gallery__last-desc">My first project based on information from a "client".</p>
+                <p class="gallery__desc">Layout</p>
+                <p class="gallery__desc">My first project based on information from a "client".</p>
             </a>
         </div>
-        <div class="button">view all project</div>
+        <div class="button"><a class="button__link" href="https://github.com/conic916">
+                <p class=button__desc>view all project</p>
+            </a></div>
     </section>
     <section class="works">
         <h1 class="works__technologies">technologies I've been learning...</h1>
+        <img class="works__img" src="./image/html.png" alt="html">
+        <img class="works__img" src="./image/css.png" alt="css">
+        <img class="works__img" src="./image/scss.png" alt="scss">
+        <img class="works__img" src="./image/github.png" alt="github">
+        <img class="works__img" src="./image/mern.png" alt="mern">
+        <img class="works__img" src="./image/bootstrap.png" alt="bootstrap">
+        <img class="works__img" src="./image/js.png" alt="java-script">
+        <img class="works__img" src="./image/react.png" alt="react">
+        <img class="works__img" src="./image/node.png" alt="node">
     </section>
-    <footer>2019 Katarzyna Da Silva. All rights reserved.</footer>
+    <section class="contact">
+        <h2 class="contact__find-contact"> Do you like what you see?</h2>
+
+        <a href="#modal-one" class="contact__show-modal">
+            <h3 class="contact__contact-me">Please<span class="contact__decoration">contact me here</span></h3>
+        </a>
+        <div class="contact__overlay" id="modal-overlay">
+            <div class="contact__modal" id="modal-one">
+                <a href="#" class="contact__close">x</a>
+                <header>contact with me</header>
+                <a href="mailto: katarzynadasilva10@gmail.com" class="contact__email">send mail</a>
+                <div class="contact__message-site">www.linkedin.com/in/katarzyna-da-silva</div>
+                <div class="contact__github">page to github: https://github.com/conic916</div>
+                <div class="contact__number">number : 0658020741</div>
+                <div class="contact__adress">
+                    <p class="contact__name"> Katarzyna Da Silva </p>
+                    <p class="contact__name">Cormeilles-en-parisis 99260</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    <footer class="footer">2019 <span>Katarzyna Da Silva</span>. All rights reserved.
+        <div class="footer__back-to-top">
+            <a href="#content__top">
+                <span>go to top</span>
+            </a>
+        </div>
+    </footer>
     <script src="./index.js"></script>
 </body>
 
