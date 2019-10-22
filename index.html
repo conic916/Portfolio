@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 
@@ -77,41 +78,48 @@
     <section class="works">
         <h1 class="works__technologies">technologies I've been learning...</h1>
         <img class="works__img" src="./image/html.png" alt="html">
+        <img class="works__img" src="./image/github.png" alt="github">
         <img class="works__img" src="./image/css.png" alt="css">
         <img class="works__img" src="./image/scss.png" alt="scss">
-        <img class="works__img" src="./image/github.png" alt="github">
-        <img class="works__img" src="./image/mern.png" alt="mern">
+        <img class="works__img" src="./image/react.png" alt="react">
+        <img class="works__img" src="./image/mongo.png" alt="mern">
         <img class="works__img" src="./image/bootstrap.png" alt="bootstrap">
         <img class="works__img" src="./image/js.png" alt="java-script">
-        <img class="works__img" src="./image/react.png" alt="react">
-        <img class="works__img" src="./image/node.png" alt="node">
+        <img class="works__img" src="./image/npm.png" alt="node">
     </section>
     <section class="contact">
         <h2 class="contact__find-contact"> Do you like what you see?</h2>
 
         <a href="#modal-one" class="contact__show-modal">
-            <h3 class="contact__contact-me">Please<span class="contact__decoration">contact me here</span></h3>
+            <h3 class="contact__contact-me">Please <span class="contact__decoration">contact me here</span></h3>
         </a>
         <div class="contact__overlay" id="modal-overlay">
             <div class="contact__modal" id="modal-one">
                 <a href="#" class="contact__close">x</a>
-                <header>contact with me</header>
-                <a href="mailto: katarzynadasilva10@gmail.com" class="contact__email">send mail</a>
-                <div class="contact__message-site">www.linkedin.com/in/katarzyna-da-silva</div>
-                <div class="contact__github">page to github: https://github.com/conic916</div>
-                <div class="contact__number">number : 0658020741</div>
-                <div class="contact__adress">
-                    <p class="contact__name"> Katarzyna Da Silva </p>
-                    <p class="contact__name">Cormeilles-en-parisis 99260</p>
+                <div class="contact-details">
+                    <h2 class="contact-details__contact">contact with me :</h2>
+                    <a href="mailto: katarzynadasilva10@gmail.com" class="contact-details__email">
+                        <p class="contact-details__decoration">e-mail : katarzynadasilva10@gmail.com <i class="far fa-envelope"></i> </p>
+                        </a>
+                    <div class="contact-details__message-site"><p class="contact-details__decoration">page to linkedin: www.linkedin.com/in/katarzyna-da-silva</p>
+                    </div>
+                    <div class="contact-details__github"> <p class="contact-details__decoration">page to: github: https://github.com/conic916</p>
+                    </div>
+                    <div class="contact-details__number"> <p class="contact-details__decoration">phone-number: 0658020741<i class="fas fa-phone"></i></p>
+                    </div>
+                    <div class="contact-details__name"> <p class="contact-details__decoration">first name and last name: Katarzyna Da Silva</p>
+                    </div>
+                    <div class="contact-details__place"> <p class="contact-details__decoration">place: Cormeilles-en-parisis 99260<i class="fas fa-home"></i></p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     </div>
-    <footer class="footer">2019 <span>Katarzyna Da Silva</span>. All rights reserved.
+    <footer class="footer">&copy; 2019 <span>Katarzyna Da Silva</span>. All rights reserved.
         <div class="footer__back-to-top">
-            <a href="#content__top">
-                <span>go to top</span>
+            <a href="#content__top" class="footer__top">
+                <span class="footer__top-decoration">go to top</span>
             </a>
         </div>
     </footer>

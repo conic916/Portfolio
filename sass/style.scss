@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     background-color: #FFFFFF;
     margin-left: 40px;
@@ -21,6 +22,7 @@ body {
 
     .sidebar__logo {
         margin-top: -25px;
+        margin-left: 10px;
         height: 50px;
         width: 250px;
         font-size: 28px;
@@ -216,7 +218,6 @@ body {
         text-decoration-line: underline;
         color: #16CCCC;
         margin-top: -40px;
-
     }
 
     .image__line {
@@ -271,8 +272,8 @@ body {
 
         .gallery__img {
             transform: translate(240%, 70%);
-            max-width: 400px;
-            height: 250px;
+            width: 200px;
+            height: 200px;
         }
 
         .gallery__seconds {
@@ -283,7 +284,7 @@ body {
 
         .gallery__medium-medium {
             transform: translate(100%, -20%);
-            width: 320px;
+            max-width: 320px;
             height: 270px;
         }
 
@@ -329,7 +330,7 @@ body {
 
 .works {
     width: 100%;
-    height: 500px;
+    height: 400px;
     background: #272727;
     display: flex;
 
@@ -350,24 +351,23 @@ body {
     }
 
     .works__img {
-        width: 110px;
-        height: 110px;
+        width: 130px;
+        height: 130px;
         flex: 0 0 auto;
         margin-top: 80px;
         border: 1px solid #272727;
-        border-radius: 50%;
         animation-name: animation-works;
         animation-duration: 10s;
         animation-timing-function: ease-in-out;
 
         &:nth-child(2n+1) {
             margin-top: 280px;
-            width: 110px;
-            height: 110px;
+            width: 130px;
+            height: 130px;
         }
 
         &:nth-child(-n+3) {
-            margin-bottom: -550px;
+            margin-bottom: -500px;
         }
     }
 
@@ -390,9 +390,10 @@ body {
 
 .contact {
     background: #272727;
-    padding-top: 150px;
+    padding-top: 170px;
     text-align: center;
     height: 450px;
+    text-decoration: none;
 
     .contact__find-contact {
         color: white;
@@ -418,6 +419,7 @@ body {
     .contact__decoration {
         color: #16CCCC;
         text-transform: uppercase;
+        text-decoration: none;
     }
 
     @keyframes animation-contact {
@@ -449,7 +451,7 @@ body {
     }
 }
 
-// scroll top
+// footer top
 .footer__back-to-top {
     float: right;
     text-decoration: none;
@@ -459,11 +461,17 @@ body {
     text-transform: uppercase;
     font-weight: 600;
     cursor: pointer;
-    border: 1px solid rgb(116, 56, 98);
 }
 
+.footer__top  {
+    text-decoration: #000000;
+    padding-top: 20px;
+    color: black;
+}
 /* modal */
-
+.contact__show-modal {
+    text-decoration: none;
+}
 .contact__overlay {
     display: none;
     position: fixed;
@@ -481,8 +489,8 @@ body {
 .contact__modal {
     display: none;
     background: #fff;
-    width: 500px;
-    height: 500px;
+    width: 800px;
+    height: 800px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -499,5 +507,55 @@ body {
         padding: 7px;
         color: #16CCCC;
         text-decoration: none;
+    }
+}
+
+.contact-details {
+    background: #FFFFFF;
+    padding: 55px;
+    text-align: center;
+    line-height: 32px;
+    margin-top: 50px;
+    display: inline-block;
+
+    .contact-details__email {
+        text-decoration: #000000;
+    }
+
+    .contact-details__contact {
+        word-spacing: 3px;
+        text-decoration: underline;
+        color: #16CCCC;
+        margin-top: 15px;
+        text-transform: uppercase;
+
+        &:hover {
+            color: #16CCCC;
+        }
+    }
+
+    .contact-details__decoration {
+        font-size: 18px;
+        font-weight: 400;
+        border-bottom: 1px solid #16CCCC;
+        padding-top: 25px;
+        text-align: justify;
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+        line-height: 42px;
+
+        &:hover {
+            color: #16CCCC;
+        }
+    }
+}
+
+i {
+    float: right;
+    margin-left: 50px;
+
+    &:hover {
+        color: #16CCCC;
     }
 }
