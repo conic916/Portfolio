@@ -13,6 +13,7 @@
 
 <body>
     <nav class="sidebar">
+         <a id="sidebar"></a>
         <div class="sidebar__logo">
             <p class=sidebar__name>KDasilva</p>
         </div>
@@ -20,8 +21,9 @@
             <div class="menu">
                 <ul class="menu__nav">
                     <li class="menu__list"><a href="#">Home</a></li>
-                    <li class="menu__list"><a href="#">About</a></li>
-                    <li class="menu__list"><a href="#">Contact</a></li>
+                    <li class="menu__list"><a href="#gallery">Works</a></li>
+                    <li class="menu__list"><a href="#">About me</a></li>
+                    <li class="menu__list"><a href="#contact">Contact</a></li>
                 </ul>
             </div>
             <span class="hamburger__container">
@@ -31,10 +33,9 @@
     </nav>
     <section class="content">
         <div class="content_section_header">
-            <a id="content__top"></a>
             <h1 class="content__header">Creating <span class="content__decoration-letter"> my experience </span>step by
-                step </h1>
-            <h2 class="content__second-header"> is just the beginning.</h2>
+                step</h1>
+            <h2 class="content__second-header">is just the beginning.</h2>
         </div>
     </section>
     <section class="image">
@@ -47,33 +48,34 @@
     </section>
     <section class="gallery">
         <div class="gallery__box">
+                <a id="gallery"></a>
             <a class="gallery__latest" href="https://conic916.github.io/first-project/" target="_blank">
-                <img class="gallery__img" src="https://via.placeholder.com/400x400C/O" alt="project"></a>
+                <img class="gallery__img" src="./image/administration-page.png" alt="project"></a>
             <a class="gallery__first" href="https://github.com/conic916/first-project" target="_blank">
                 <p class="gallery__desc">Layout</p>
                 <p class="gallery__desc">My first project based on information from a "client".</p>
             </a>
-            <a class="gallery__new" href="https://conic916.github.io/first-project/" target="_blank">
-                <img class="gallery__seconds" src="https://via.placeholder.com/400x400C/O" alt="project"></a>
-            <a class="gallery__second" href="https://github.com/conic916/first-project" target="_blank">
+             <a class="gallery__new" href="https://conic916.github.io/game-stone-paper-and-scissors/." target="_blank">
+                <img class="gallery__seconds" src="./image/gra-js.png" alt="project"></a>
+            <a class="gallery__img" href="https://github.com/conic916/game-stone-paper-and-scissors" target="_blank">
                 <p class="gallery__desc">Layout</p>
                 <p class="gallery__desc">My first project based on information from a "client".</p>
             </a>
-            <a class="gallery__indirect" href="https://conic916.github.io/first-project/" target="_blank">
-                <img class="gallery__medium-medium" src="https://via.placeholder.com/400x400C/O" alt="project"></a>
-            <a class="gallery__third" href="https://github.com/conic916/first-project" target="_blank">
+            <a class="gallery__indirect" href="https://conic916.github.io/ES6-stoper/" target="_blank">
+                <img class="gallery__medium-medium" src="./image/stoper.png" alt="project"></a>
+            <a class="gallery__third" href="https://github.com/conic916/ES6-stoper/tree/master" target="_blank">
                 <p class="gallery__desc">Layout</p>
                 <p class="gallery__desc">My first project based on information from a "client".</p>
             </a>
 
             <a class="gallery__older" href="https://conic916.github.io/first-project/" target="_blank">
-                <img class="gallery__jp" src="https://via.placeholder.com/400x400C/O" alt="project"></a>
+                <img class="gallery__jp" src="./image/gra-js.png" alt="project"></a>
             <a class="gallery__" href="https://github.com/conic916/first-project" target="_blank">
                 <p class="gallery__desc">Layout</p>
                 <p class="gallery__desc">My first project based on information from a "client".</p>
             </a>
             <a class="gallery__eldest" href="https://conic916.github.io/first-project/" target="_blank">
-                <img class="gallery__ig" src="https://via.placeholder.com/400x400C/O" alt="project"></a>
+                <img class="gallery__ig" src="./image/gra-js.png" alt="project"></a>
             <a class="gallery__site" href="https://github.com/conic916/first-project" target="_blank">
                 <p class="gallery__desc">Layout</p>
                 <p class="gallery__desc">My first project based on information from a "client".</p>
@@ -95,11 +97,11 @@
         <img class="works__img" src="./image/js.png" alt="java-script">
         <img class="works__img" src="./image/npm.png" alt="node">
     </section>
-    <section class="contact">
+    <section class="contact"> 
         <h2 class="contact__find-contact"> Do you like what you see?</h2>
 
         <a href="#modal-one" class="contact__show-modal">
-            <h3 class="contact__contact-me">Please <span class="contact__decoration">contact me here</span></h3>
+            <h3 class="contact__contact-me">Please <span class="contact__decoration">contact me here</span><a id="contact"></a></h3>
         </a>
         <div class="contact__overlay" id="modal-overlay">
             <div class="contact__modal" id="modal-one">
@@ -136,7 +138,7 @@
     </div>
     <footer class="footer">&copy; 2019 <span>Katarzyna Da Silva</span>. All rights reserved.
         <div class="footer__back-to-top">
-            <a href="#content__top" class="footer__top">
+            <a href="#sidebar" class="footer__top">
                 <span class="footer__top-decoration">go to top</span>
             </a>
         </div>
