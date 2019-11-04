@@ -1,0 +1,123 @@
+/* header */
+
+.content_section_header {
+    padding-top: 25px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 800;
+    height: 180px;
+    width: 80%;
+
+    .content__header {
+        animation-name: animation-header;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+
+        .content__decoration-letter {
+            text-decoration: line-through;
+            color: #16CCCC;
+            animation-name: letter;
+            animation-duration: 4s;
+            animation-timing-function: ease-in-out;
+
+            @keyframes letter {
+                from {
+                    color: #16CCCC;
+
+                    to {
+                        color: rgb(0, 0, 0);
+                    }
+                }
+            }
+        }
+
+        /* animation */
+
+        @keyframes animation-header {
+            from {
+                margin-top: 40%;
+                width: 100%;
+                animation-timing-function: ease-out;
+            }
+
+            to {
+                text-align: center;
+                width: 100%;
+                color: rgb(0, 0, 0);
+                animation-timing-function: ease-out;
+            }
+        }
+    }
+}
+
+/* line */
+
+.image__container {
+    // box-shadow: 1px 1px 1px 1px red;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    animation-name: animation-container;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+
+    @keyframes animation-container {
+        from {
+            margin-top: -5%;
+            color: #ffffff;
+            animation-timing-function: ease-out;
+        }
+
+        to {
+            color: none;
+            text-align: center;
+            visibility: hidden;
+            display: none;
+            animation-timing-function: ease-out;
+        }
+    }
+
+    .image__heading {
+        text-decoration-line: underline;
+        color: #16CCCC;
+        margin-top: -40px;
+    }
+
+    .image__line {
+        border-left: 2px solid rgb(0, 0, 0);
+        height: 180px;
+        width: 0;
+        margin: auto;
+        transform: translate(-50%, 25%);
+        justify-content: center;
+        animation-name: animation_line;
+        animation-timing-function: ease-in-out;
+        animation-duration: 5s;
+    }
+
+    @keyframes animation_line {
+        from {
+            padding-top: -10%;
+            color: none;
+        }
+
+        to {
+            padding-top: -10%;
+            color: none;
+            text-align: center;
+            display: none;
+        }
+    }
+
+    .image__box {
+        // border: 1px solid red;
+        justify-content: center;
+        padding-top: 10%;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+}

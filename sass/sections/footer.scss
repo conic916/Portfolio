@@ -1,0 +1,29 @@
+/* footer */
+
+.footer {
+    text-align: center;
+    padding: 20px;
+
+    span {
+        font-size: 18px;
+        font-weight: 800;
+    }
+}
+
+// footer top
+.footer__back-to-top {
+    float: right;
+    text-decoration: none;
+    display: inline-block;
+    text-align: right;
+    color: rgb(136, 134, 134);
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.footer__top {
+    text-decoration: #000000;
+    padding-top: 20px;
+    color: black;
+}

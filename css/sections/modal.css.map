@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "modal.css",
+	"sources": [
+		"../../sass/sections/modal.scss"
+	],
+	"names": [],
+	"mappings": ""
+}

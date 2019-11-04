@@ -1,0 +1,113 @@
+
+/* works */
+
+.works {
+    width: 100%;
+    height: 400px;
+    background: #272727;
+    display: flex;
+
+    .works__technologies {
+        border: 1px solid none;
+        margin-left: 220px;
+        word-wrap: break-word;
+        width: 350px;
+        color: #ffffff;
+        font-size: 24px;
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 3px;
+        padding: 40px;
+        animation-name: animation-contact;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+    }
+
+    .works__img {
+        width: 130px;
+        height: 130px;
+        flex: 0 0 auto;
+        margin-top: 80px;
+        border: 1px solid #272727;
+        animation-name: animation-works;
+        animation-duration: 10s;
+        animation-timing-function: ease-in-out;
+
+        &:nth-child(2n+1) {
+            margin-top: 280px;
+            width: 130px;
+            height: 130px;
+        }
+
+        &:nth-child(-n+3) {
+            margin-bottom: -500px;
+        }
+    }
+
+    @keyframes animation-works {
+        from {
+            margin-right: -100%;
+            color: #ffffff;
+            animation-timing-function: ease-out;
+        }
+
+        to {
+            color: none;
+            text-align: center;
+            visibility: hidden;
+            display: none;
+            animation-timing-function: ease-out;
+        }
+    }
+}
+
+.contact {
+    background: #272727;
+    padding-top: 170px;
+    text-align: center;
+    height: 450px;
+    text-decoration: none;
+
+    .contact__find-contact {
+        color: white;
+        font-size: 18px;
+        letter-spacing: 2px;
+        animation-name: animation-contact;
+        animation-duration: 10s;
+        animation-timing-function: ease-in-out;
+        cursor: pointer;
+    }
+
+    .contact__contact-me {
+
+        color: white;
+        font-size: 34px;
+        letter-spacing: 3px;
+        animation-name: animation-contact;
+        animation-duration: 10s;
+        animation-timing-function: ease-in-out;
+        cursor: pointer;
+    }
+
+    .contact__decoration {
+        color: #16CCCC;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    @keyframes animation-contact {
+        from {
+            margin-left: -150%;
+            color: #ffffff;
+            animation-timing-function: ease-out;
+        }
+
+        to {
+            color: none;
+            text-align: center;
+            visibility: hidden;
+            display: none;
+            animation-timing-function: ease-out;
+        }
+    }
+}
